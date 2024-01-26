@@ -3,6 +3,8 @@ from tkinter import messagebox,filedialog
 import os
 import pandas as pd # pandas and pyxl for reading the content from the excel file
 from PIL.ImageTk import PhotoImage
+from email.mime.text import MIMEText
+
 
 import code_email
 import time
@@ -176,6 +178,7 @@ class Email:
                     self.status_bar()
                     time.sleep(1)
 
+                
 
                 messagebox.showinfo("Success", "Email Has Been Sent,Please Check Status....", parent=self.root)
 
